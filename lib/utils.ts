@@ -1,4 +1,6 @@
-import { Children } from 'react'
+import clsx, { ClassValue } from 'clsx'
+import React, { Children } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 export const subComponent = {
   create: (
@@ -20,4 +22,8 @@ export const subComponent = {
       }
     })
   },
+}
+
+export function cn(...classNames: Array<ClassValue>) {
+  return twMerge(clsx(...classNames))
 }
