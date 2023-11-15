@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
     /* Bundler mode */
@@ -23,18 +19,11 @@
     "noFallthroughCasesInSwitch": true,
     /* Path aliases */
     "paths": {
-      "@lib/*": [
-        "lib/*"
-      ],
-      "@src/*": [
-        "src/*"
-      ],
-    },
+      "@lib/*": ["./lib/*"],
+      "@src/*": ["./src/*"]
+    }
   },
-  "include": [
-    "src",
-    "lib",
-  ],
+  "include": ["src", "lib"],
   "references": [
     {
       "path": "./tsconfig.node.json"
